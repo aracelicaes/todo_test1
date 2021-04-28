@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="projectForm">
+    <form id="theProjectForm" class="mt-4">
+      <div class="formBox">
+        <h2>Project</h2>
+        <label for="name">Name:</label>
+        <input type="text" id="projectName" name="name" placeholder="Project Name Here...">
+      </div>
+      <button type="button" id="projectBtn" class="btn btn-success mt-4">Submit</button>
+    </form>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="projectDisplay">
+    <h2 class="projectName">Project "Name" ToDo List</h2>
+  </div>
+  <div class="taskForm">
+    <form class="theTaskForm hidden">
+      <div class="formBox">
+        <label class="switch">
+          <input type="checkbox" class="taskStatus" name="status">
+          <span class="slider round"></span>
+        </label>
+      </div>
+      <div class="formBox">
+        <label for="name">Name:</label>
+        <input type="text" class="taskName" name="name" placeholder="Task Name Here...">
+      </div>
+      <div class="formBox">
+        <label for="description">Description:</label>
+        <input type="text" class="taskDescription" name="description" placeholder="Task Description Here...">
+      </div>
+      <div class="formBox">
+        <label for="date">Due Date:</label>
+        <input type="date" class="taskDate" name="date">
+      </div>
+      <div class="formBox">
+        <label for="priority">Priority:</label>
+        <select name="priority" class="taskPriority">
+          <option value="low">Low</option>
+          <option value="medium">Medium</option>
+          <option value="high">High</option>
+        </select>
+      </div>
+      <button type="button" id="taskBtn" class="btn btn-success mt-4">Submit</button>
+    </form>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
